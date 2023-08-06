@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 
 //  الكود المسئول عن جلب الداتا من الباك اند
  export const fetchProducts = createAsyncThunk("productsSlice/fetchProducts", async() => {
-  const res = await fetch("http://localhost:1337/api/single-products?populate=*")
+  const res = await fetch("url")
   const data = await res.json()
   return data
 })
